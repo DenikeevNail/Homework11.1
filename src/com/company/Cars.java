@@ -1,21 +1,22 @@
 package com.company;
 
 public abstract class Cars {
-    private int steeringwheel;
+    private boolean steeringwheel;
     private int wheel;
     private String name;
 
-    public Cars(int steeringwheel, int wheel, String name) {
-        this.setSteeringwheel(12);
-        this.setWheel(15);
+    public Cars(boolean steeringwheel, int wheel, String name) {
+        this.setSteeringwheel(steeringwheel);
+        this.setWheel(4);
         this.setName("Lexus");
     }
 
-    public int getSteeringwheel() {
+
+    public boolean isSteeringwheel() {
         return steeringwheel;
     }
 
-    public void setSteeringwheel(int steeringwheel) {
+    public void setSteeringwheel(boolean steeringwheel) {
         this.steeringwheel = steeringwheel;
     }
 
@@ -27,11 +28,11 @@ public abstract class Cars {
         this.wheel = wheel;
     }
 
-    public String getFirm() {
+    public String getName() {
         return name;
     }
 
-    public void setName(String firm) {
-        this.name = firm;
+    public void setName(String name) {
+        this.name = name;
     }
 }
