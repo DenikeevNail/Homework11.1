@@ -1,38 +1,39 @@
 package com.company;
 
 public abstract class Cars {
-    private boolean steeringwheel;
-    private int wheel;
-    private String name;
 
-    public Cars(boolean steeringwheel, int wheel, String name) {
-        this.setSteeringwheel(steeringwheel);
-        this.setWheel(4);
-        this.setName("Lexus");
+    private boolean SteeringWheel;
+    private int Wheel;
+    private String CarName;
+
+
+    public Cars(boolean steeringWheel, int wheel, String carName){
+        this.setSteeringWheel(steeringWheel);
+        this.setWheel(wheel);
+        this.setCarName(carName);
     }
 
-
-    public boolean isSteeringwheel() {
-        return steeringwheel;
+    public boolean getSteeringWheel() {
+        return SteeringWheel;
     }
 
-    public void setSteeringwheel(boolean steeringwheel) {
-        this.steeringwheel = steeringwheel;
-    }
-
-    public int getWheel() {
-        return wheel;
+    public void setSteeringWheel(boolean steeringWheel) {
+        SteeringWheel = steeringWheel;
     }
 
     public void setWheel(int wheel) {
-        this.wheel = wheel;
+        Wheel = wheel;
     }
 
-    public String getName() {
-        return name;
+    public String getCarName() {
+        return CarName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCarName(String carName) {
+        CarName = carName;
+    }
+
+    public int getWheel() {
+        return Wheel;
     }
 }
